@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100.546" height="155.511" viewBox="0 0 100.546 155.511">
+  <g id="Group_7" data-name="Group 7" transform="translate(-46 -18)">
+    <g id="Group_3" data-name="Group 3" transform="translate(12)">
+      <path id="Polygon_1" data-name="Polygon 1" d="M14.752,6.282a3,3,0,0,1,5.5,0L33.161,35.8A3,3,0,0,1,30.413,40H4.587a3,3,0,0,1-2.748-4.2Z" transform="translate(93 18) rotate(90)" fill="#ed1b24"/>
+      <path id="Polygon_2" data-name="Polygon 2" d="M14.752,6.282a3,3,0,0,1,5.5,0L33.161,35.8A3,3,0,0,1,30.413,40H4.587a3,3,0,0,1-2.748-4.2Z" transform="translate(76 53) rotate(-90)" fill="#ed1b24"/>
+    </g>
+    <g id="Group_6" data-name="Group 6">
+      <g id="Group_1" data-name="Group 1" transform="translate(19 -16)">
+        <circle id="Ellipse_1" data-name="Ellipse 1" cx="3.5" cy="3.5" r="3.5" transform="translate(74 75)" fill="#4d4d4d"/>
+        <circle id="Ellipse_1-2" data-name="Ellipse 1" cx="3.5" cy="3.5" r="3.5" transform="translate(74 92)" fill="#4d4d4d"/>
+        <circle id="Ellipse_1-3" data-name="Ellipse 1" cx="3.5" cy="3.5" r="3.5" transform="translate(74 108)" fill="#4d4d4d"/>
+      </g>
+      <g id="Group_4" data-name="Group 4">
+        <path id="iconmonstr-beer-8" d="M37.24,36.214c-2.062-4.787-4.043-21.4-4.043-22.962,0-4.182,3.639-1.9.224-11.572C33.023.559,29.646,0,26.273,0s-6.749.559-7.146,1.677c-3.327,9.428.224,7.624.224,11.572,0,1.561-1.981,18.175-4.043,22.962S7,42.64,7,52.762V87.049c0,5.134,4.452,5.462,19.273,5.462s19.273-.328,19.273-5.462V52.762C45.546,42.64,39.3,41,37.24,36.214ZM22.418,54.289,22.438,84.8c-1.958.251-6.927.532-7.729-.705V53.784c0-10.639,5.269-7.278,9.652-20.21-1.095,6.753-1.943,10.219-1.943,20.715Z" transform="translate(39 81)" fill="#4d4d4d"/>
+        <path id="Path_1" data-name="Path 1" d="M49.177,163.289l1.63-35.592,11.955-16.845L68.739,127.7,65.75,144.814,64.392,171.44l-13.585-2.989Z" fill="#4d4d4d"/>
+      </g>
+      <g id="Group_5" data-name="Group 5" transform="translate(62)">
+        <path id="iconmonstr-beer-8-2" data-name="iconmonstr-beer-8" d="M37.24,36.214c-2.062-4.787-4.043-21.4-4.043-22.962,0-4.182,3.639-1.9.224-11.572C33.023.559,29.646,0,26.273,0s-6.749.559-7.146,1.677c-3.327,9.428.224,7.624.224,11.572,0,1.561-1.981,18.175-4.043,22.962S7,42.64,7,52.762V87.049c0,5.134,4.452,5.462,19.273,5.462s19.273-.328,19.273-5.462V52.762C45.546,42.64,39.3,41,37.24,36.214ZM22.418,54.289,22.438,84.8c-1.958.251-6.927.532-7.729-.705V53.784c0-10.639,5.269-7.278,9.652-20.21-1.095,6.753-1.943,10.219-1.943,20.715Z" transform="translate(39 81)" fill="#4d4d4d"/>
+        <path id="Path_1-2" data-name="Path 1" d="M49.177,163.289l1.63-35.592,11.955-16.845L68.739,127.7,65.75,144.814,64.392,171.44l-13.585-2.989Z" fill="#4d4d4d"/>
+      </g>
+    </g>
+  </g>
+</svg>
