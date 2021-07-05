@@ -90,7 +90,14 @@ const Header = ({ grabKeyword, style, setShowSearch, showSearch }) => {
     <div style={{ ...style, display: "flex", justifyContent: "space-between" }}>
       <span>
         <p style={{ color: "#4d4d4d", fontSize: "1.4rem", padding: "8px 0px" }}>
-          <strong style={{ fontFamily: "AdineuePRO" }}>
+          <strong
+            style={{
+              fontFamily: "Montserrat",
+              fontWeight: 600,
+              letterSpacing: -1,
+              fontSize: "1.3rem",
+            }}
+          >
             drinkZ<span style={{ color: "#ed1b24" }}>.</span>
           </strong>
           store
@@ -106,7 +113,9 @@ const Header = ({ grabKeyword, style, setShowSearch, showSearch }) => {
             padding: 0,
             maxWidth: "45vw",
             margin: 0,
-            fontFamily: "AdineuePRO",
+            fontFamily: "Montserrat",
+            textDecoration: "none",
+            fontWeight: 300,
             padding: "6px 0px",
             color: "black ",
             borderBottom: "1px #ed1b24 solid",
@@ -150,7 +159,7 @@ const Filter = ({ grabFilter }) => {
       <select
         style={{
           padding: 8,
-          fontFamily: "Adihaus",
+          fontFamily: "Teko",
           border: "none",
           fontSize: "1rem",
           outline: "none",
@@ -170,7 +179,9 @@ const Filter = ({ grabFilter }) => {
 const Results = ({ keyword, data }) => {
   return (
     <div>
-      <h3 style={{ fontFamily: "Oswald", fontWeight: 200, color: "#4d4d4d" }}>
+      <h3
+        style={{ fontFamily: "Montserrat", fontWeight: 300, color: "#4d4d4d" }}
+      >
         "{keyword}" results
       </h3>
       <br />
@@ -183,7 +194,8 @@ const Results = ({ keyword, data }) => {
             style={{
               textAlign: "center",
               marginTop: 30,
-              fontFamily: "AdineuePRO",
+              fontFamily: "Montserrat",
+              fontWeight: 500,
               fontSize: "0.9rem",
             }}
           >
@@ -211,7 +223,7 @@ const Results = ({ keyword, data }) => {
 };
 
 const Product = ({ name, price, quantity, alc, img }) => {
-  const [ordering, setOrdering] = useState(false);
+  const [text, setText] = useState("order now");
   const router = useRouter();
   return (
     <div
@@ -245,7 +257,15 @@ const Product = ({ name, price, quantity, alc, img }) => {
           width={150}
         />
       </div>
-      <p style={{ fontFamily: "AdineuePRO", padding: "6px 0px", height: 50 }}>
+      <p
+        style={{
+          fontFamily: "Montserrat",
+          padding: "6px 0px",
+          height: 50,
+          fontWeight: 600,
+          fontSize: "0.8rem",
+        }}
+      >
         {name}
       </p>
       <div
@@ -256,7 +276,7 @@ const Product = ({ name, price, quantity, alc, img }) => {
         }}
       >
         <p style={{ fontSize: "1.1rem", marginBottom: 12 }}>KES {price}</p>
-        <p style={{ fontSize: "1.1rem", marginBottom: 12, color: "#ed1b24" }}>
+        <p style={{ fontSize: "1.1rem", marginBottom: 12, color: "gray" }}>
           {`Alc.${alc}%`}
         </p>
       </div>
@@ -275,14 +295,14 @@ const Product = ({ name, price, quantity, alc, img }) => {
           width: 150,
         }}
         onClick={() => {
-          setOrdering(true);
+          setText("Ordering");
           let message = `Hey. I want a bottle of ${name}.`;
           console.log(encodeURI(message));
           router.push(`https://wa.me/254748920306/?text=${encodeURI(message)}`);
-          setOrdering(false);
+          setText("Ordering");
         }}
       >
-        {ordering ? "Ordering" : "Order now"}
+        {text}
       </button>
     </div>
   );
@@ -291,7 +311,14 @@ const Product = ({ name, price, quantity, alc, img }) => {
 const Recommended = ({ data }) => {
   return (
     <div>
-      <h3 style={{ fontFamily: "Oswald", fontWeight: 200, color: "#4d4d4d" }}>
+      <h3
+        style={{
+          fontFamily: "Montserrat",
+          fontWeight: 300,
+          letterSpacing: -1,
+          color: "#4d4d4d",
+        }}
+      >
         Recommended
       </h3>
       <br />
@@ -315,7 +342,14 @@ const Recommended = ({ data }) => {
 const Whisky = ({ filter, data }) => {
   return (
     <div>
-      <h3 style={{ fontFamily: "Oswald", fontWeight: 200, color: "#4d4d4d" }}>
+      <h3
+        style={{
+          fontFamily: "Montserrat",
+          fontWeight: 300,
+          letterSpacing: -1,
+          color: "#4d4d4d",
+        }}
+      >
         Whiskys
       </h3>
       <br />
@@ -325,7 +359,8 @@ const Whisky = ({ filter, data }) => {
             style={{
               textAlign: "center",
               marginTop: 30,
-              fontFamily: "AdineuePRO",
+              fontFamily: "Montserrat",
+              letterSpacing: -1,
               fontSize: "0.9rem",
             }}
           >
@@ -363,7 +398,14 @@ const Whisky = ({ filter, data }) => {
 const Vodka = ({ filter, data }) => {
   return (
     <div>
-      <h3 style={{ fontFamily: "Oswald", fontWeight: 200, color: "#4d4d4d" }}>
+      <h3
+        style={{
+          fontFamily: "Montserrat",
+          fontWeight: 300,
+          letterSpacing: -1,
+          color: "#4d4d4d",
+        }}
+      >
         Vodkas
       </h3>
       <br />
@@ -373,7 +415,8 @@ const Vodka = ({ filter, data }) => {
             style={{
               textAlign: "center",
               marginTop: 30,
-              fontFamily: "AdineuePRO",
+              fontFamily: "Montserrat",
+              letterSpacing: -1,
               fontSize: "0.9rem",
             }}
           >
@@ -411,7 +454,14 @@ const Vodka = ({ filter, data }) => {
 const Gin = ({ filter, data }) => {
   return (
     <div>
-      <h3 style={{ fontFamily: "Oswald", fontWeight: 200, color: "#4d4d4d" }}>
+      <h3
+        style={{
+          fontFamily: "Montserrat",
+          fontWeight: 300,
+          letterSpacing: -1,
+          color: "#4d4d4d",
+        }}
+      >
         Gins
       </h3>
       <br />
@@ -421,7 +471,8 @@ const Gin = ({ filter, data }) => {
             style={{
               textAlign: "center",
               marginTop: 30,
-              fontFamily: "AdineuePRO",
+              fontFamily: "Montserrat",
+              letterSpacing: -1,
               fontSize: "0.9rem",
             }}
           >
@@ -459,7 +510,14 @@ const Gin = ({ filter, data }) => {
 const Beer = ({ filter, data }) => {
   return (
     <div>
-      <h3 style={{ fontFamily: "Oswald", fontWeight: 200, color: "#4d4d4d" }}>
+      <h3
+        style={{
+          fontFamily: "Montserrat",
+          fontWeight: 300,
+          letterSpacing: -1,
+          color: "#4d4d4d",
+        }}
+      >
         Beers
       </h3>
       <br />
@@ -469,7 +527,8 @@ const Beer = ({ filter, data }) => {
             style={{
               textAlign: "center",
               marginTop: 30,
-              fontFamily: "AdineuePRO",
+              fontFamily: "Montserrat",
+              letterSpacing: -1,
               fontSize: "0.9rem",
             }}
           >
@@ -507,7 +566,14 @@ const Beer = ({ filter, data }) => {
 const Wine = ({ filter, data }) => {
   return (
     <div>
-      <h3 style={{ fontFamily: "Oswald", fontWeight: 200, color: "#4d4d4d" }}>
+      <h3
+        style={{
+          fontFamily: "Montserrat",
+          fontWeight: 300,
+          letterSpacing: -1,
+          color: "#4d4d4d",
+        }}
+      >
         Wines
       </h3>
       <br />
@@ -518,7 +584,8 @@ const Wine = ({ filter, data }) => {
             style={{
               textAlign: "center",
               marginTop: 30,
-              fontFamily: "AdineuePRO",
+              fontFamily: "Montserrat",
+              letterSpacing: -1,
               fontSize: "0.9rem",
             }}
           >
@@ -556,7 +623,14 @@ const Wine = ({ filter, data }) => {
 const Rum = ({ filter, data }) => {
   return (
     <div>
-      <h3 style={{ fontFamily: "Oswald", fontWeight: 200, color: "#4d4d4d" }}>
+      <h3
+        style={{
+          fontFamily: "Montserrat",
+          fontWeight: 300,
+          letterSpacing: -1,
+          color: "#4d4d4d",
+        }}
+      >
         Rums
       </h3>
       <br />
@@ -566,7 +640,8 @@ const Rum = ({ filter, data }) => {
             style={{
               textAlign: "center",
               marginTop: 30,
-              fontFamily: "AdineuePRO",
+              fontFamily: "Montserrat",
+              letterSpacing: -1,
               fontSize: "0.9rem",
             }}
           >
@@ -604,7 +679,14 @@ const Rum = ({ filter, data }) => {
 const Brandy = ({ filter, data }) => {
   return (
     <div>
-      <h3 style={{ fontFamily: "Oswald", fontWeight: 200, color: "#4d4d4d" }}>
+      <h3
+        style={{
+          fontFamily: "Montserrat",
+          fontWeight: 300,
+          letterSpacing: -1,
+          color: "#4d4d4d",
+        }}
+      >
         Brandys
       </h3>
       <br />
@@ -614,7 +696,8 @@ const Brandy = ({ filter, data }) => {
             style={{
               textAlign: "center",
               marginTop: 30,
-              fontFamily: "AdineuePRO",
+              fontFamily: "Montserrat",
+              letterSpacing: -1,
               fontSize: "0.9rem",
             }}
           >
@@ -652,7 +735,14 @@ const Brandy = ({ filter, data }) => {
 const Liqueur = ({ filter, data }) => {
   return (
     <div>
-      <h3 style={{ fontFamily: "Oswald", fontWeight: 200, color: "#4d4d4d" }}>
+      <h3
+        style={{
+          fontFamily: "Montserrat",
+          fontWeight: 300,
+          letterSpacing: -1,
+          color: "#4d4d4d",
+        }}
+      >
         Liqueurs
       </h3>
       <br />
@@ -662,7 +752,8 @@ const Liqueur = ({ filter, data }) => {
             style={{
               textAlign: "center",
               marginTop: 30,
-              fontFamily: "AdineuePRO",
+              fontFamily: "Montserrat",
+              letterSpacing: -1,
               fontSize: "0.9rem",
             }}
           >
@@ -700,7 +791,14 @@ const Liqueur = ({ filter, data }) => {
 const Tequila = ({ filter, data }) => {
   return (
     <div>
-      <h3 style={{ fontFamily: "Oswald", fontWeight: 200, color: "#4d4d4d" }}>
+      <h3
+        style={{
+          fontFamily: "Montserrat",
+          fontWeight: 300,
+          letterSpacing: -1,
+          color: "#4d4d4d",
+        }}
+      >
         Tequila
       </h3>
       <br />
@@ -710,7 +808,8 @@ const Tequila = ({ filter, data }) => {
             style={{
               textAlign: "center",
               marginTop: 30,
-              fontFamily: "AdineuePRO",
+              fontFamily: "Montserrat",
+              letterSpacing: -1,
               fontSize: "0.9rem",
             }}
           >
